@@ -21,6 +21,39 @@
 <!-- BEGIN: Body-->
 
 
+<li class="nav-item nav-search"><a class="nav-link nav-link-search" href="#"><i class="ficon ft-search"></i></a>
+    <div class="search-input">
+        <input class="input" type="text" placeholder="Explore Modern..." tabindex="0" data-search="template-list">
+        <div class="search-input-close"><i class="ft-x"></i></div>
+        <ul class="search-list"></ul>
+    </div>
+</li>
+
+
+
+<li><a class="menu-item" href="#"><i class="la la-search"></i><span data-i18n="Search">Search</span></a>
+    <ul class="menu-content">
+        <li><a class="menu-item" href="search-page.html"><i></i><span data-i18n="Search Page">Search Page</span></a>
+        </li>
+        <li><a class="menu-item" href="search-website.html"><i></i><span data-i18n="Search Website">Search Website</span></a>
+        </li>
+        <li><a class="menu-item" href="search-images.html"><i></i><span data-i18n="Search Images">Search Images</span></a>
+        </li>
+        <li><a class="menu-item" href="search-videos.html"><i></i><span data-i18n="Search Videos">Search Videos</span></a>
+        </li>
+    </ul>
+</li>
+
+
+<li><a class="menu-item" href="headers-breadcrumbs-with-search.html"><i></i><span data-i18n="Breadcrumbs with search">Breadcrumbs with search</span></a>
+
+    <div x-data="{ search: '' }">
+        <input x-model="search" placeholder="Rechercher...">
+        <template x-for="item in filteredItems" :key="item.id">
+            <!-- Affichage des résultats -->
+        </template>
+    </div>
+
 <body class="vertical-layout vertical-compact-menu 2-columns   fixed-navbar" data-open="click" data-menu="vertical-compact-menu" data-col="2-columns">
 
                                 <li><a class="menu-item" href="component-pagination.html"><i></i><span data-i18n="Pagination">Pagination</span></a>
